@@ -1,0 +1,605 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&display=swap');
+
+:root {
+    --primary-green-light: #F0F0EC;
+    --primary-green-medium: #5E7461;
+    --primary-green-dark: #434B47;
+    --primary-cta-light: #969683;
+    --primary-cta-dark: #284734;
+    --primary-text-white: #ffffff;
+    --primary-text-black: #000000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+/* HEADER - navigation */
+
+header {
+    background-color: var(--primary-green-dark);
+    padding: 1rem;
+}
+
+.bonzai-logo {
+    max-width: 13.688rem;
+    height: 3.25rem;
+    margin-right: auto;
+}
+
+.nav-links li, a {
+    display: inline-block;
+    padding: 0px 0px;
+    margin-right: 1.25rem;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--primary-text-white);
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.nav-button {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--primary-text-white);
+    padding: 1rem 3rem;
+    gap: 0.625rem;
+    width: 8rem;
+    height: 3.2rem;
+    background: var(--primary-cta-light);
+    border-radius: 3px;
+    border: none;
+}
+
+/* PAGE: INDEX/LANDING PAGE - hero */
+
+.hero-image {
+    max-width: 100vw;
+    max-height: 35.313rem;
+}
+
+.hero-booking__arrival h4 {
+    font-family: 'Dosis';
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin:0;
+    line-height: 1.25;
+    color: var(--primary-text-white);
+ }
+
+.hero-booking__arrival {
+    max-width: 2rem;
+}
+
+.hero-booking {
+    padding: 1.625rem;
+    max-width: 55.5rem;
+    background: var(--primary-green-medium);
+    border-radius: 2px;
+    margin-top: -8rem;
+}
+
+.hero-booking__options {
+    font-family: 'Dosis';
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    width: 18.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    height: 2.688rem;
+    background-color: var(--primary-text-white);
+    color: #000000;
+    /*arrow icon*/
+    background-image: url(assets/icons/arrow-icon.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 270px 15.5px;
+    font-family: 'Dosis';
+  }
+
+  .hero-button {
+    font-family: 'Dosis';
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 1.25rem;
+    width: 18.75rem;
+    height: 2.5rem;
+    background: var(--primary-green-dark);
+    color: var(--primary-text-white);
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+/* PAGE: INDEX/LANDING PAGE - about section */
+
+.cabins-about h2 {
+    font-family: 'Dosis';
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    margin: 1.875rem;
+}
+
+.cabins-about p {
+    font-family: 'Dosis';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    max-width: 56.25rem;
+    margin: auto;
+}
+
+/* PAGE: INDEX/LANDING PAGE + BOKA - cabins card */
+
+.cabins-card {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr ;
+    grid-template-areas: "cabins-card__image"
+    "cabins-card__info"
+    "cabins-card__facilites";
+    gap: 1.875rem;
+    margin: auto;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    width: 90vw;
+    height: 430px;
+    background: var(--primary-text-white);
+}
+
+.cabins-card img {
+    margin-top: 1rem;
+    max-width: 30.125rem;
+    height: 20.75rem;
+}
+
+.cabins-card h3 {
+    font-family: 'Dosis';
+    font-weight: 400;
+    font-size: 2.313rem;
+    margin-top: 0.3rem;
+}
+
+.cabins-card p {
+    font-family: 'Dosis';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.313;
+    margin: 1.875rem 0 1.25rem 0;
+}
+
+.cabins-card ul {
+    list-style-position: inside;
+    font-family: 'Dosis';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.313rem;
+    margin-left: -1.6rem;
+    list-style-position: outside;
+}
+
+.cabins-card button {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    width: 19.4rem;
+    height: 3.9rem;
+    background: var(--primary-cta-light);
+    border-radius: 4px;
+    border: none;
+    color: var(--primary-text-white);
+    margin-left: 2rem;
+}
+
+/* PAGE: INDEX/LANDING PAGE + ABOUT US - activites section */
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1.25rem 12.5rem 0 12.5rem;
+}
+
+.activities-section {
+    background-color: var(--primary-green-light);
+    font-family: 'Dosis';
+    width: 100vw;
+}
+
+.activities-section h4 {
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 1.25rem;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.activities-section__card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18.75rem;
+}
+
+.activities-section__card img {
+    height: 15.625rem;
+}
+
+.activities-section__card h5 {
+    font-family: 'Dosis';
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+.activities-section__card p {
+    font-family: 'Dosis';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin: 0.5rem 2rem 3.125rem 2rem;
+}
+
+/* PAGE: INDEX/LANDING PAGE - socials section */
+
+.socials-section {
+    background-color: var(--primary-green-medium);
+    font-family: 'Dosis';
+    color: var(--primary-text-white);
+    padding: 2rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials-section__signup {
+    width: 25rem;
+    height: 2.5rem;
+    background: var(--primary-text-white);
+    border-radius: 2px;
+    border: none;
+}
+
+.socials__subscribe-button {
+    font-family: 'Dosis';
+    background-color: var(--primary-cta-dark);
+    color: var(--primary-text-white);
+    font-weight: 600;
+    font-size: 1.5rem;
+    width: 12.5rem;
+    height: 2.5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    border: none;
+    padding-bottom: 1.25rem;
+    margin-left: 1.25rem;
+}
+
+.socials-section__follow img {
+    padding: 0.625rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--primary-green-dark);
+    color: var(--primary-text-white);
+    padding-bottom: 4.375rem;
+    width: 100vw;
+    padding: 3.125rem;
+    margin: 0;
+}
+
+
+.footer-section__info h3 {
+    font-family: 'Dosis';
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--primary-text-white);
+    margin-bottom: 0.625rem;
+}
+
+.footer-section__info p {
+    font-family: 'Dosis';
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.438rem;
+    color: var(--primary-text-white);
+}
+
+.footer-links {
+    list-style: none;
+    padding-left: 0.1rem;
+}
+
+/* --- PAGE: OM OSS --- */
+
+.about-us {
+    max-width: 56.25rem;
+    margin: 0 auto;
+}
+
+.about-us h2 {
+    font-family: 'Dosis';
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.about-us p {
+    font-family: 'Dosis';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: center;
+    padding-bottom: 3rem;
+
+}
+
+/* --- PAGE: BOKA --- */
+
+.book-background-img {
+    background-image: url(assets/aurora-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  /* calendar */
+
+.calendar-search__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.875rem;
+}
+
+.calendar {
+    font-family: 'Dosis';
+    max-width: 25rem;
+    height: 25rem;
+    margin: 0;
+    background: var(--primary-green-medium);
+    padding: 1.25rem;
+    border-radius: 5px;
+    box-shadow: 0px 2.5rem 1.875rem -1.25rem rgba(0,0,0,0.3);
+}
+
+.calendar h4 {
+    margin: 0;
+}
+    
+.calendar__month {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-text-white);
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+    font-weight: 300;
+} 
+    
+.calendar__days {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    color: var(--primary-text-white);
+    font-weight: 600;
+    margin-bottom: 0.938rem;
+}
+      
+.calendar__days span {
+    width: 3.125rem;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+    
+.calendar__dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+      
+.calendar__dates button {
+    font-family: 'Dosis';
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    justify-self: center;
+    align-self: center;
+    width: 3.125rem;
+    height: 3.125rem;
+    margin: 0.125rem;
+    transition-duration: .2s;
+    color: var(--primary-text-white);
+}
+        
+.calendar__today {
+    box-shadow: inset 0px 0px 0px 2px var(--primary-cta-light);
+    background-color: var(--primary-cta-light);
+}
+
+/* book/search box */
+        
+.booking-form {
+    background-color: var(--primary-green-medium);
+    border-radius: 5px;
+    height: 25rem;
+    padding: 1.25rem;
+    width: 25rem;
+    box-shadow: 0px 2.5rem 1.875rem -1.25rem rgba(0,0,0,0.3);
+  }
+  
+  .booking-form__title {
+    font-family: 'Dosis';
+    color: var(--primary-text-white);
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 0.625rem;
+  }
+  
+  .booking-form__options {
+    background-color: #FFFFFF;
+    text-align: left;
+    color: var(--primary-text-black);
+    border-radius: 5px;
+    border: 0;
+    font-size: 1rem;
+    height: 2.5rem;
+    padding: 0.25rem 1.25rem 0;
+    width: 100%;
+    margin-top: 1.875rem;
+    background-image: url(assets/icons/arrow-icon.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 326px 14px;
+    font-family: 'Dosis';
+  }
+
+ #key-icon {
+    background-image: url(assets/icons/key-icon.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 326px 14px;
+    font-family: 'Dosis';
+  }
+  
+  .booking-form__button {
+    font-family: 'Dosis';
+    background-color: var(--primary-cta-dark);
+    border-radius: 5px;
+    border: 0;
+    color: var(--primary-text-white);
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    height: 3.125rem;
+    margin-top: 6.875rem;
+    text-align: center;
+    width: 100%;
+  }
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 768px) {
+
+   header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+   .hero-image {
+        width: 100vw;
+        height: 35.313rem
+    }
+
+    .hero-booking {
+        text-align: center;
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 55.5rem;
+        height: 9.25;
+        background: var(--primary-green-medium);
+        border-radius: 2px;
+        display: grid;
+        grid-template-columns: 20.375rem 20.375rem 8.25rem;
+    }
+  
+    .hero-button {
+        font-family: 'Dosis';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin: auto;
+        margin-left: 3.125rem;
+        gap: 0.625rem;
+        width: 8.25rem;
+        height: 3.875rem;
+        background: var(--primary-cta-dark);
+        color: var(--primary-text-white);
+        border-radius: 3px;
+        border: none;
+    }
+
+    .cabins-card {
+        box-shadow: 0px 2.07874px 4.15748px rgba(0, 0, 0, 0.25);
+        border-radius: 3px;
+    }
+
+    .footer-section {
+        display: flex;
+        justify-content:space-around;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .hero-booking {
+        display: inline-block;
+        margin-top: auto;
+    }
+
+    .cabins-card {
+        display: inline-block;
+        padding: 1rem;
+        margin: 1.3rem 0 1rem 0;
+    }
+
+    .cabins-card img {
+        max-width: 90vw;
+    }
+
+    .activities-grid {
+        grid-template-columns: 1fr;
+        padding:0;
+    }
+
+    .about-us {
+        margin: 1rem;
+    }
+
+    .book__background-img {
+        background-image: none;
+    }
+
+    .booking-form {
+        margin: 3rem 0 1.7rem 0;
+    }
+
+    .socials-section {
+        display: inline-block;
+    }
+
+    .socials-section__signup {
+        max-width: 18rem;
+        margin-bottom: 1rem;
+    }
+
+    .calendar-search__container {
+        display: inline-block;
+        padding: 0;
+    }
+
+}
