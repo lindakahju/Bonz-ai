@@ -580,7 +580,7 @@ footer {
         margin: 1rem;
     }
 
-    .book__background-img {
+    .book-background-img {
         background-image: none;
     }
 
@@ -601,5 +601,19 @@ footer {
         display: inline-block;
         padding: 0;
     }
+
+    .calendar, .booking-form {
+        max-width: 23.4rem;
+    }
+
+    .calendar__dates button {
+        width: 2.125rem;
+    }
+
+    .booking-form__options, #key-icon {
+        background-position: 18.75rem 0.875rem;
+    }
+
+    
 
 }
